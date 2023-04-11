@@ -1,18 +1,11 @@
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { icons } from "../helper/Logo";
 import Logo from "../assets/logo-dark.png";
 import { useState } from "react";
 
-const icons = [
-  { name: "Linkedin", icon: <FaLinkedin size={25}/>, bgColor: "bg-blue-600" },
-  { name: "GitHub", icon: <FaGithub size={25}/>, bgColor: "bg-slate-800" },
-  { name: "EMail", icon: <HiOutlineMail size={25}/>, bgColor: "bg-emerald-400" },
-  { name: "Contect", icon: <BsFillPersonLinesFill size={25}/>, bgColor: "bg-gray-600" },
-];
+console.log(icons)
 
-icons.map((icon) => console.log(icon.bgColor))
-
+icons.map((icon) => console.log(icon))
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
@@ -56,8 +49,9 @@ const Navbar = () => {
 
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
-          {icons.map((icon) => (
-            <li className={`w-[130px] h-[50px] flex justify-between items-center ml-[-83px] hover:ml-[-10px] duration-300 ${icon.bgColor}`}>
+          {icons.map((icon, index) => {
+            return (
+            <li key={index} className={`w-[130px] h-[50px] flex justify-between items-center ml-[-83px] hover:ml-[-10px] duration-300 ${icon.bgColor}`}>
               <a
                 className='flex justify-between items-center w-full text-gray-300'
                 href="/"
@@ -65,7 +59,7 @@ const Navbar = () => {
                 {icon.name} {icon.icon}
               </a>
             </li>
-          ))}
+          )})}
         </ul>
       </div>
     </div>
