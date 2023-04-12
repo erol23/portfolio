@@ -75,7 +75,9 @@ const Navbar = () => {
             <li key={index} className={`w-[130px] h-[50px] flex justify-between items-center ml-[-83px] hover:ml-[-10px] duration-300 ${icon.bgColor}`}>
               <a
                 className='flex justify-between items-center w-full text-gray-300'
-                href="/"
+                href={icon.url}
+                target="_blank"
+                rel="noreferrer"
               >
                 {icon.name} {icon.icon}
               </a>

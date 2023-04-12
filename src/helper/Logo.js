@@ -10,7 +10,6 @@ import GitHub from "../assets/github.png"
 import Python from "../assets/python.png"
 import { FaGithub, FaLinkedin } from "react-icons/fa"
 import { HiOutlineMail } from "react-icons/hi"
-import { BsFillPersonLinesFill } from "react-icons/bs"
 
 export const skillsData = [
     {
@@ -56,8 +55,7 @@ export const skillsData = [
 ]
 
 export const icons = [
-    { name: "Linkedin", icon: <FaLinkedin size={25}/>, bgColor: "bg-blue-600" },
-    { name: "GitHub", icon: <FaGithub size={25}/>, bgColor: "bg-slate-800" },
-    { name: "EMail", icon: <HiOutlineMail size={25}/>, bgColor: "bg-emerald-400" },
-    { name: "Contect", icon: <BsFillPersonLinesFill size={25}/>, bgColor: "bg-gray-600" },
+    { name: "Linkedin", url: "https://www.linkedin.com/in/huseyinerkanerol/", icon: <FaLinkedin size={25}/>, bgColor: "bg-blue-600" },
+    { name: "GitHub", url:"https://github.com/erol23", icon: <FaGithub size={25}/>, bgColor: "bg-slate-800" },
+    { name: "EMail", url:"mailto:hurkanrol15@gmail.com", icon: <HiOutlineMail size={25}/>, bgColor: "bg-emerald-400" },
 ];
