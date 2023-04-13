@@ -12,17 +12,17 @@ const Home = () => {
           I'm a Front-End Developer
         </h2>
         <p className="text-[#8892b0] py-4 max-w-[700px]">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni non
-          aspernatur, ducimus sequi debitis nesciunt id corrupti dolor numquam
-          odit ratione nostrum! Cumque minima dolores nulla atque enim,
-          distinctio quam.
+          I graduated from bootcamp as a front-end developer. I have knowledge
+          of HTML, CSS, Bootstrap, tailwind, React-Redux, Context API,
+          especially React and JavaScript. I have been in the IT field for 2
+          years. looking for new challenges.
         </p>
         <div>
           <button className="text-white border-2 px-6 py-3 my-2 flex items-center hover:bg-[#BB92b0] hover:border-[#BB92b0]">
-            View Projects 
-          <span className="ml-1 hover:rotate-90 duration-300">
-            <HiArrowNarrowRight />
-          </span>
+            View Projects
+            <span className="ml-1 hover:rotate-90 duration-300">
+              <HiArrowNarrowRight />
+            </span>
           </button>
         </div>
       </div>
