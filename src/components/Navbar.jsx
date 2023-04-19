@@ -85,11 +85,11 @@ const Navbar = () => {
           )})}
         </ul>
       </div>
-      <div className="hidden xs:flex fixed flex-col top-[35%] left-0">
+      <div className="lg:hidden xs:flex fixed flex-col top-[35%] right-0">
         <ul>
           {icons.map((icon, index) => {
             return (
-            <li key={index} className={`h-[35px] right-0 rounded-[70px] mb-3 flex justify-between items-center duration-300 ${icon.bgColor}`}>
+            <li key={index} className={`h-[35px] rounded-[70px] mb-3 flex justify-between items-center duration-300 ${icon.bgColor}`}>
               <a
                 className='flex justify-between items-center w-full text-gray-300'
                 href={icon.url}
